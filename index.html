@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyến Tàu Thanh Xuân 2022-2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Intro Screen -->
+    <div id="intro" class="intro">
+        <div class="intro-content">
+            <h1 class="intro-line active" data-line="0">Chúng ta đã từng nghĩ...</h1>
+            <h1 class="intro-line" data-line="1">Những ngày này sẽ kéo dài mãi mãi...</h1>
+            <h1 class="intro-line" data-line="2">Rồi một ngày...</h1>
+            <h1 class="intro-line" data-line="3">mọi thứ trở thành ký ức...</h1>
+            <h1 class="intro-line title" data-line="4">Chuyến Tàu Thanh Xuân 2022 - 2026 💙</h1>
+        </div>
+        <button id="skipIntro" class="skip-btn">Bỏ qua</button>
+    </div>
+
+    <!-- Login Screen -->
+    <div id="loginScreen" class="login-screen">
+        <div class="login-container">
+            <h2>Nhập biệt danh của bạn</h2>
+            <input type="text" id="nicknameInput" placeholder="VD: Minh, Lan..." maxlength="20">
+            <button id="enterBtn">Vào kỷ yếu</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="user-info">
+                <span id="userName">👤 Khách</span>
+            </div>
+            <div class="music-control">
+                <button id="musicToggle" class="music-btn">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon">⏸</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <h1 class="hero-title">Chuyến Tàu Thanh Xuân<br>2022 - 2026</h1>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="cover.jpg" alt="Cover" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="group.jpg" alt="Group" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox hidden">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="" alt="Lightbox">
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="backgroundMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
